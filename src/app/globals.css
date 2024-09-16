@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-primary bg-primary text-white leading-loose;
+  }
+  .h1 {
+    @apply text-[24px] sm:text-[32px] md:text-[40px] lg:text-[52px] xl:text-[72px] leading-[1.1] font-semibold;
+  }
+  .h2 {
+    @apply text-[px] xl:text-[48px] leading-[1.1] font-semibold;
+  }
+  .h3 {
+    @apply text-[16px] xl:text-[24px] leading-[1.1] font-semibold;
+  }
+  .textanimation {
+    overflow: hidden; 
+    /* border-right: .15em solid orange; */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; 
+    letter-spacing: 5px; /* Adjust as needed */
+    animation: typing 4s steps(60, end)
+    /* ,blink-caret 0.75s step-end infinite ; */
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width:100%}
+  }
+  
+  /* The typewriter cursor effect */
+  /* @keyframes blink-caret {
+    from,to { border-color: transparent }
+    50% { border-color: rgba(209, 141, 15, 0.399); }
+  } */
+  .bounce {
+    animation: bounce2 2s ease infinite;
+  }
+  @keyframes bounce2 {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-7px);}
+    60% {transform: translateY(-7px);}
+  }
+}
