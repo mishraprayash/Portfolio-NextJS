@@ -19,7 +19,7 @@ const Photo = () => {
             opacity: 1,
             transition: { delay: 2, duration: 0.6, ease: "easeInOut" },
           }}
-          className="w-[250px] h-[250px] xl:w-[500px] xl:h-[500px] mix-blend-lighten absolute left-6 xl:left-0 xl:bottom-10"
+          className="w-[225px] h-[225px] xl:w-[500px] xl:h-[500px] mix-blend-lighten absolute md: xl:left-0 xl:bottom-10"
         >
           <Image
             src={profilePic}
@@ -28,7 +28,7 @@ const Photo = () => {
             width={390}
             height={390}
             quality={100}
-            className="object-contain opacity-90 absolute left-[50px]"
+            className="object-contain opacity-90 absolute left-[40px] xl:left-[50px] top-[-8px]"
           />
         </motion.div>
         {/* circle */}
